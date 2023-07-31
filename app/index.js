@@ -77,16 +77,5 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     marginVertical: 20
-  },
-  optionRow: {
-    flexDirection: "row",
-    marginVertical: 20,
-    alignItems: "center",
-  },
-  optionText: {
-    color: "#eee",
-    fontSize: 18,
-    fontWeight: "bold",
-    marginLeft: 10,
   }
 });
