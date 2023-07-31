@@ -4,9 +4,8 @@ import menuOptions from "../assets/menuOptions";
 import MenuOption from "../components/MenuOption";
 import {
     FontAwesome,
-    Entypo,
+    Entypo, 
     MaterialCommunityIcons,
-    MaterialIcons,
     FontAwesome5,
     Ionicons,
   } from '@expo/vector-icons';
@@ -33,7 +32,6 @@ export default function Page() {
             <FontAwesome name="user-circle" size={30} color="gray" />
         </View>
         <Image source={car} style={styles.image} resizeMode="contain" />
-        {/* <Controls /> */}
         <FlatList 
             data={menuOptions}
             showsVerticalScrollIndicator={false}
@@ -74,7 +72,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     color: "gray",
-    fontWeight: "500"  
+    fontWeight: 500  
   },
   image: {
     width: "100%",
