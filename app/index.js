@@ -11,6 +11,17 @@ import {
     Ionicons,
   } from '@expo/vector-icons';
 
+const Controls = () => {
+    return(
+        <View style={styles.controls}>
+            <Entypo name="lock" size={26} color="gray" />
+            <MaterialCommunityIcons name="fan" size={26} color="gray" />
+            <FontAwesome5 name="bolt" size={26} color="gray" />
+            <Ionicons name="car-sport-sharp" size={26} color="gray" />
+        </View>
+    )
+}
+
 export default function Page() {
   return (
     <View style={styles.container}>
@@ -22,16 +33,12 @@ export default function Page() {
             <FontAwesome name="user-circle" size={30} color="gray" />
         </View>
         <Image source={car} style={styles.image} resizeMode="contain" />
-        <View style={styles.controls}>
-            <Entypo name="lock" size={26} color="gray" />
-            <MaterialCommunityIcons name="fan" size={26} color="gray" />
-            <FontAwesome5 name="bolt" size={26} color="gray" />
-            <Ionicons name="car-sport-sharp" size={26} color="gray" />
-        </View>
+        {/* <Controls /> */}
         <FlatList 
             data={menuOptions}
             showsVerticalScrollIndicator={false}
             renderItem={MenuOption}
+            ListHeaderComponent={Controls}
         />
         {/* <FlatList 
             data={menuOptions}
